@@ -17,7 +17,7 @@ import lombok.Setter;
 @Entity
 public class Doctor {
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long doctor_id;
+	private Long doctorID;
 	private String username;
 	private String password;
 	private String doccareer;

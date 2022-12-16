@@ -21,6 +21,18 @@ public class HomeController {
 //	}
 	@GetMapping("/member/join")
 	public String join() {
+		return "/member/joinForm";
+	}
+	@GetMapping("/member/userJoin")
+	public String userJoin() {
 		return "/member/join";
+	}
+	@GetMapping("/member/doctorJoin")
+	public String doctorJoin() {
+		return "/member/doctorJoin";
+	}
+	@GetMapping("/member/adminJoin")
+	public String joinAdmin() {
+		return "/member/adminJoin";
 	}
 }

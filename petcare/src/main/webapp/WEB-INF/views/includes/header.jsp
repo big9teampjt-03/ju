@@ -41,7 +41,9 @@
   <ul class="navbar-nav">
   <sec:authorize access="isAnonymous()">
     <li class="nav-item"><a class="nav-link"  href="/member/login">Log In</a></li>
-    <li class="nav-item"><a class="nav-link"  href="/member/join">Sign Up</a></li>
+    <li class="nav-item"><a class="nav-link"  href="/member/join">회원가입</a></li>
+<!--     <li class="nav-item"><a class="nav-link"  href="/member/doctorJoin">의사회원가입</a></li> -->
+<!--     <li class="nav-item"><a class="nav-link"  href="/member/joinAdmin">관리자회원가입</a></li> -->
     </sec:authorize>
   <sec:authorize access="isAuthenticated()"> <!-- 일반 회원, 권한명 바꿔야 함 -->
     <li class="nav-item"><a class="nav-link" href="/logout">Log Out(<sec:authentication property="principal.user.username" />)</a></li>
